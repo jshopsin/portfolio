@@ -1,0 +1,257 @@
+body {
+  font-family: arial;
+  color: #154360; /* steel blue */
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding-left: -15px;
+}
+
+#nav-container {
+  background-color: #F8F9F9; /* light gray */
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  top: -20px;
+  overflow: hidden;
+  padding: 20px;
+  padding-left: 360px;
+  margin-left: -10px;
+}
+
+.animation {
+  box-sizing: border-box;
+  height: 75px;
+  width: 75px;
+  position: absolute;
+  z-index: 0;
+  background-color: #D5F5E3; /* light green */
+  animation:
+    pulse 8s ease infinite alternate,
+    nudge 10s linear infinite alternate;
+  border-radius: 100%;
+  margin-top: 20px;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    background-color: #D5F5E3; /* light green */
+  }
+  50% {
+    background-color: #AED6F1; /* light blue */
+  }
+}
+
+@keyframes nudge {
+  0%, 100% {
+    transform: translate(0, 0) scale(6,1);
+  }
+
+  50% {
+    transform: translate(700px, 0)scale(1,1);
+  }
+
+  80% {
+    transform: translate(-1px, 0);
+  }
+}
+
+#nav-bar {
+  position: absolute;
+  z-index: 1;
+  justify-content: flex-start;
+  margin-top: 50px;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#nav-bar li {
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.62%;
+  height: 60px;
+  color: #154360; /* steel blue */
+}
+
+#nav-bar li:first-child {
+  float: left;
+  width: 173px;
+  padding-left: -30px;
+  margin-right: 0;
+  justify-content: flex-start;
+}
+
+#nav-bar li a {
+  color: #154360; /* steel blue */
+  vertical-align: center;
+  text-decoration: none;
+}
+
+#nav-bar li a:hover {
+  color: #2E86C1; /* mid blue */
+  vertical-align: center;
+  text-decoration: none;
+}
+
+#nav-container h1 {
+  color: #154360; /* steel blue */
+  position: absolute;
+  z-index: 10;
+  font-family: arial black;
+}
+
+#nav-tabs-container {
+  background-color: #D5F5E3; /* light green */
+  width: 100%;
+  /*height: 15px;*/
+  position: fixed;
+  top: 115px;
+  overflow: hidden;
+  padding: 10px;
+  padding-left: 526px;
+  margin-left: -560px;
+}
+
+#nav-tabs-container li {
+  float: left;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  vertical-align: center;
+  height: 5px;
+  padding-top: -2px;
+  padding-right: 65px;
+  margin-bottom: 10px;
+  color: #154360; /* steel blue */
+}
+
+#nav-tabs-container li:first-child {
+  justify-content: flex-start;
+  padding-left: -50px;
+}
+
+#nav-tabs-container li a {
+  color: #154360; /* steel blue */
+  vertical-align: center;
+  text-decoration: none;
+}
+
+#nav-tabs-container li a:hover {
+  color: #2E86C1; /* mid blue */
+}
+
+#main {
+  width: 50%;
+  margin: auto;
+  margin-top: 180px;
+}
+
+.active {
+  background-color: color: #154360; /* steel blue */
+  display: show;
+}
+
+.active a {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.sub-tabs {
+  background-color: #D6EAF8; /* light green */
+  width: 100%;
+  /*height: 15px;*/
+  position: fixed;
+  top: 155px;
+  overflow: hidden;
+  padding: 10px;
+  padding-left: 380px;
+  margin-left: -380px;
+}
+
+.sub-tabs li {
+  float: left;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  vertical-align: center;
+  height: 5px;
+  padding-top: -2px;
+  padding-right: 65px;
+  margin-bottom: 12px;
+  margin-top: 12px;
+  color: #154360; /* steel blue */
+}
+
+.sub-tabs li:first-child {
+  justify-content: flex-start;
+  padding-left: -50px;
+}
+
+.sub-tabs li a {
+  color: #154360; /* steel blue */
+  vertical-align: center;
+  text-decoration: none;
+}
+
+.sub-tabs li a:hover {
+  color: #2E86C1; /* mid blue */
+}
+
+.tab-content, .sub-tab-content {
+  display: none;
+}
+
+.sub-tab-content:first-child {
+  margin-top: 300px;
+}
+
+.sub-tab-content {
+  margin-left: -40px;
+}
+
+.li-title {
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+/* SKILLS CONTENT */
+
+#skills-list {
+  margin-left: -36px;
+}
+
+/* EXPERIENCE CONTENT */
+
+.exp-years {
+  float: right;
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.job-title {
+  margin-bottom: 10px;
+}
+
+.exp-location {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.exp-details li {
+  list-style-type: disc;
+  margin-left: -20px;
+  margin-bottom: 5px;
+}
