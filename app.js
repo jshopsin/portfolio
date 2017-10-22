@@ -6,16 +6,16 @@ $(document).ready(function() {
   tabsChange('#projects', ['#summary', '#skills', '#qualifications', '#experience']);
   tabsChange('#experience', ['#summary', '#skills', '#qualifications', '#projects']);
 
-  subTabsChange('#education', ['#awards']);
-  subTabsChange('#awards', ['#education']);
+  subTabsChangeClick('#education', ['#awards']);
+  subTabsChangeClick('#awards', ['#education']);
 
-  subTabsChange('#one-stop-shop', ['#imdbc', '#hawk-set']);
-  subTabsChange('#imdbc', ['#one-stop-shop', '#hawk-set']);
-  subTabsChange('#hawk-set', ['#one-stop-shop', '#imdbc']);
+  subTabsChangeClick('#one-stop-shop', ['#imdbc', '#hawk-set']);
+  subTabsChangeClick('#imdbc', ['#one-stop-shop', '#hawk-set']);
+  subTabsChangeClick('#hawk-set', ['#one-stop-shop', '#imdbc']);
 
-  subTabsChange('#mason', ['#hks', '#bleecker']);
-  subTabsChange('#hks', ['#mason', '#bleecker']);
-  subTabsChange('#bleecker', ['#mason', '#hks']);
+  subTabsChangeClick('#mason', ['#hks', '#bleecker']);
+  subTabsChangeClick('#hks', ['#mason', '#bleecker']);
+  subTabsChangeClick('#bleecker', ['#mason', '#hks']);
 });
 
 function tabsChange(showTab, hideTabArray) {
@@ -29,28 +29,34 @@ function tabsChange(showTab, hideTabArray) {
     $('div ' + showTab).show();
     if (showTab === '#qualifications') {
       subTabsChange('#education', ['#awards']);
-      $("a[href = #education]").parent().addClass('active');
-      $('div #education').show();
+      // $("a[href = #education]").parent().addClass('active');
+      // $('div #education').show();
     };
     if (showTab === '#projects') {
-      $("a[href = #one-stop-shop]").parent().addClass('active');
-      $('div #one-stop-shop').show();
+      subTabsChange('#one-stop-shop', ['#imdbc', '#hawk-set']);
+      // $("a[href = #one-stop-shop]").parent().addClass('active');
+      // $('div #one-stop-shop').show();
     };
     if (showTab === '#experience') {
-      $("a[href = #mason]").parent().addClass('active');
-      $('div #mason').show();
+      subTabsChange('#mason', ['#hks', '#bleecker']);
+      // $("a[href = #mason]").parent().addClass('active');
+      // $('div #mason').show();
     };
   });
 };
 
-function subTabsChange(showTab, hideTabArray) {
+function subTabsChangeClick(showTab, hideTabArray) {
   $(".sub-tabs li a[href = " + showTab + "]").on("click", function(event) {
     event.preventDefault();
-    for (i in hideTabArray) {
-      $("a[href = " + hideTabArray[i] + "]").parent().removeClass('active');
-      $('div ' + hideTabArray[i]).hide();
-    };
-    $("a[href = " + showTab + "]").parent().addClass('active');
-    $('div ' + showTab).show();
+    subTabsChange(showTab, hideTabArray);
   });
+};
+
+function subTabsChange(showTab, hideTabArray) {
+  for (i in hideTabArray) {
+    $("a[href = " + hideTabArray[i] + "]").parent().removeClass('active');
+    $('div ' + hideTabArray[i]).hide();
+  };
+  $("a[href = " + showTab + "]").parent().addClass('active');
+  $('div ' + showTab).show();
 };
