@@ -1,4 +1,4 @@
-# JENNIFER G SHOPSIN
+# JENNIFER SHOPSIN
 
 San Francisco Bay Area | jennifer.shopsin@gmail.com | 301.379.9979
 
