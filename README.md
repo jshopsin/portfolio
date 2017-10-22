@@ -2,7 +2,7 @@
 
 San Francisco Bay Area | jennifer.shopsin@gmail.com
 
-https://www.linkedin.com/in/jennifer-shopsin
+https://www.linkedin.com/in/jennifer-shopsin | 
 https://github.com/jshopsin
 
 As an avid film lover, I studied storyboarding which I utilized as a designer to ensure I always put the user first when launching global UI/UX and architecture projects. Transitioning into web development, I went from tinkering in Chrome developer tools, to deploying full-stack web and mobile applications. I am constantly growing by taking on new challenges and breaking down the problems and constraints in order to build the most elegant and user-focused solutions.
