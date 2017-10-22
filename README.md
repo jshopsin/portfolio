@@ -5,7 +5,9 @@
 jennifer.shopsin@gmail.com | [LinkedIn](https://www.linkedin.com/in/jennifer-shopsin "Jennifer Shopsin's LinkedIn Profile") | 
 [GitHub](https://github.com/jshopsin "Jennifer Shopsin's GitHub Profile")
 
-As an avid film lover, I studied storyboarding which I utilized as a designer to ensure I always put the user first when launching global UI/UX and architecture projects. Transitioning into web development, I went from tinkering in Chrome developer tools, to deploying full-stack web and mobile applications. I am constantly growing by taking on new challenges and breaking down the problems and constraints in order to build the most elegant and user-focused solutions.
+I am a maker and a strategist. I evolved from playing with legos as a child, to making jewelry, knitting and launching global UI/UX applications and architecture projects. Transitioning into web development, I went from tinkering in Chrome developer tools, to deploying full-stack web and mobile applications.
+
+As an avid film lover, I studied storyboarding as a tool for visualizing a user's journey in both architectural and UI/UX projects. I am constantly growing by taking on new challenges and breaking down the problems and constraints in order to build the most elegant and user-focused solutions.
 
 ___
 ### SKILLS
